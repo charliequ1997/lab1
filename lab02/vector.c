@@ -144,6 +144,6 @@ void vector_set(vector_t *v, size_t loc, int value) {
       free(v->data);
       v->data = check;
       v->size = loc + 1;
-      check = NULL
+      check = NULL;
     }
 }
