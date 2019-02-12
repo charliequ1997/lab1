@@ -5,6 +5,9 @@
 
 void lfsr_calculate(uint16_t *reg) {
     /* YOUR CODE HERE */
+    unsigned temp;
+    temp = (*temp >> 0) ^ (*temp >> 2) ^ (*reg >> 3) ^ (*reg >> 5) & 1;
+    *reg = (*reg >> 1) | (temp << 15)
 }
 
 int main() {
