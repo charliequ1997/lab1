@@ -12,10 +12,10 @@ int ll_has_cycle(node *head) {
       hare = hare->next->next;
       tortoise = tortoise->next;
       if (tortoise == hare) {
-        return true;
+        return 1;
       }
     }
-    return false;
+    return 0;
 }
 
 void test_ll_has_cycle(void) {
